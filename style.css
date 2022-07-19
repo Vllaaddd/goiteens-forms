@@ -129,6 +129,10 @@ html{
     pointer-events: none;
 }
 
+.textarea{
+    resize: none;
+}
+
 .modal-button{
     position: absolute;
     background-image: url(./img/close.svg);

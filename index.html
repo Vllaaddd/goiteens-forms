@@ -49,7 +49,29 @@
             <!-- Модальне вікно -->
             <div class="backdrop is-hidden" data-backdrop>
                 <div class="modal">
-                    <button type="button" class="modal-button" data-modal-close></button> 
+                    <button type="button" class="modal-button" data-modal-close></button>
+                    <!-- Форма -->
+                    <form class="form">
+                        <label>Ім'я
+                            <input class="form-field" type="text" name="user-name">
+                        </label>
+                        <label>Телефон
+                            <input class="form-field" type="tel" name="phone-number">
+                        </label>
+                        <label>Пошта
+                            <input class="form-field" type="text" name="mail">
+                        </label>
+                        <label>Коментарі
+                            <textarea placeholder="Введіть текст" name="comments" id="comments" rows="10" class="textarea"></textarea>
+                        </label>
+                        <br>
+                        <label class="field-label">
+                            <input type="checkbox" name="checkbox" value="checkbox">
+                            Погоджуюсь з розсилкою і приймаю <a href="" class="modal-link">Умови договору</a>
+                        </label>
+                        <br>
+                        <button type="submit">Надіслати</button>
+                    </form>
                 </div>
             </div>
         </section>
