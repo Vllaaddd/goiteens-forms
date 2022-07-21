@@ -52,24 +52,41 @@
                     <button type="button" class="modal-button" data-modal-close></button>
                     <!-- Форма -->
                     <form class="form">
-                        <label>Ім'я
-                            <input class="form-field" type="text" name="user-name">
-                        </label>
-                        <label>Телефон
-                            <input class="form-field" type="tel" name="phone-number">
-                        </label>
-                        <label>Пошта
-                            <input class="form-field" type="text" name="mail">
-                        </label>
-                        <label>Коментарі
-                            <textarea placeholder="Введіть текст" name="comments" id="comments" rows="10" class="textarea"></textarea>
-                        </label>
-                        <br>
-                        <label class="field-label">
-                            <input type="checkbox" name="checkbox" value="checkbox">
+                        <h3>Залиште свої дані, ми Вам зателефонуємо</h3>
+                        <ul class="fields">
+                            <li class="field">
+                                <label for="username">Ім'я</label>
+                                <input class="form-field" type="text" name="user-name" id="user-name">
+                                <svg class="form-icon">
+                                    <use href="./img/person.svg"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                                <label for="phone-number">Телефон</label>
+                                <input class="form-field" type="tel" name="phone-number" id="phone-number">
+                                <svg class="form-icon">
+                                    <use href="./img/phone.svg"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                                <label for="mail">Пошта</label>
+                                <input class="form-field" type="text" name="mail" autocomplete="off" id="mail">
+                                <svg class="form-icon">
+                                    <use href="./img/email.svg"></use>
+                                </svg>
+                            </li>
+                            <li class="field">
+                                <label for="comments">Коментарі</label>
+                                <textarea placeholder="Введіть текст" name="comments" id="comments" rows="10" class="textarea"></textarea>
+                            </li>
+                        </ul>
+                        <div class="checkbox">
+                            <label class="field-label" for="checkbox">
+                                <input type="checkbox" name="checkbox" value="checkbox">
+                            </label>
                             Погоджуюсь з розсилкою і приймаю <a href="" class="modal-link">Умови договору</a>
-                        </label>
-                        <br>
+                        </div>
+                         
                         <button type="submit">Надіслати</button>
                     </form>
                 </div>
