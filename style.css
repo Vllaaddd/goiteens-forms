@@ -163,12 +163,11 @@ html{
 
 .form-icon{
     position: absolute;
-    top: 30px;
+    top: 35px;
     left: 14px;
     width: 18px;
     height: 18px;
-    fill: currentColor;
-    z-index: 5;
+    fill: #212121;
 }
 
 .field{
