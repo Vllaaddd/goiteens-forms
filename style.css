@@ -583,6 +583,11 @@ border: 0.5px solid #ECECEC;
     border: 1px solid #EEEEEE;
     width: 320px;
     margin-bottom: 30px;
+    display: block;
+}
+
+.hide{
+    display: none;
 }
 
 .portfolio_li:hover{
@@ -613,12 +618,17 @@ border: 0.5px solid #ECECEC;
     border-radius: 4px;
     padding: 6px 25px;
     background-color: #F5F4FA;
-    margin-bottom: 50px;
     min-width: 73px;
 }
 
 .li-button:not(:last-child){
     margin-right: 8px;
+}
+
+.li-button{
+    cursor: pointer;
+    height: 30px;
+    margin-bottom: 50px;
 }
 
 .features-icon{
