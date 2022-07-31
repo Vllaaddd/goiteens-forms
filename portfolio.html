@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!-- Шапка -->
@@ -44,13 +44,13 @@
     <main>
         <!-- Посилання -->
         <section>
-            <div class="filt_div container">
-                <ul class="filter">
-                    <li class="li-button"><a data-f="all" class="link-text">Усе</a></li>
-                    <li class="li-button"><a data-f="web-site" class="link-text">Веб-сайти</a></li>
-                    <li class="li-button"><a data-f="zastosunku" class="link-text">Застосунки</a></li>
-                    <li class="li-button"><a data-f="duzain" class="link-text">Дизайн</a></li>
-                    <li class="li-button"><a data-f="marketung" class="link-text">Маркетинг</a></li>
+            <div class="filters_div container">
+                <ul class="filters">
+                    <li class="filter-button"><a data-f="all" class="link-text">Усе</a></li>
+                    <li class="filter-button"><a data-f="web-site" class="link-text">Веб-сайти</a></li>
+                    <li class="filter-button"><a data-f="zastosunku" class="link-text">Застосунки</a></li>
+                    <li class="filter-button"><a data-f="duzain" class="link-text">Дизайн</a></li>
+                    <li class="filter-button"><a data-f="marketung" class="link-text">Маркетинг</a></li>
                 </ul>
             </div>
         </section>
@@ -58,10 +58,10 @@
         <section class="seciton">
             <div class="container">
                 <ul class="examples">
-                    <li class="portfolio_li web-site">
+                    <li class="portfolio-card web-site">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/noutbook.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/noutbook.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -69,13 +69,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Технокряк</p>
-                            <p class="portfolio-description">Веб-сайт</p>
+                            <p class="example-description">Веб-сайт</p>
                         </a>
                     </li>
-                    <li class="portfolio_li duzain">
+                    <li class="portfolio-card duzain">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/kartuna.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/kartuna.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -83,13 +83,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Постер New Orlean vs Golden Star</p>
-                            <p class="portfolio-description">Дизайн</p>
+                            <p class="example-description">Дизайн</p>
                         </a>
                     </li>
-                    <li class="portfolio_li zastosunku">
+                    <li class="portfolio-card zastosunku">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/seafood.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/seafood.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -98,13 +98,13 @@
                             </div>
                             
                             <p class="items-descritption">Ресторан Seafood</p>
-                            <p class="portfolio-description">Застосунок</p>
+                            <p class="example-description">Застосунок</p>
                         </a>
                     </li>
-                    <li class="portfolio_li marketung">
+                    <li class="portfolio-card marketung">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/navushnuki.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/navushnuki.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -112,13 +112,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Проект Prime</p>
-                            <p class="portfolio-description">Маркетинг</p>
+                            <p class="example-description">Маркетинг</p>
                         </a>
                     </li>
-                    <li class="portfolio_li zastosunku">
+                    <li class="portfolio-card zastosunku">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/korobku.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/korobku.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -126,13 +126,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Проект Boxes</p>
-                            <p class="portfolio-description">Застосунок</p>
+                            <p class="example-description">Застосунок</p>
                         </a>
                     </li>
-                    <li class="portfolio_li web-site">
+                    <li class="portfolio-card web-site">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/monitor.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/monitor.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -140,13 +140,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Inspiration has no Borders</p>
-                            <p class="portfolio-description">Веб-сайт</p>
+                            <p class="example-description">Веб-сайт</p>
                         </a>
                     </li>
-                    <li class="portfolio_li marketung">
+                    <li class="portfolio-card marketung">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/knuga.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/knuga.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -154,13 +154,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Видавництво Limited Edition</p>
-                            <p class="portfolio-description">Дизайн</p>
+                            <p class="example-description">Дизайн</p>
                         </a>
                     </li>
-                    <li class="portfolio_li duzain">
+                    <li class="portfolio-card duzain">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/labeltag.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/labeltag.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -168,13 +168,13 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Проект LAB</p>
-                            <p class="portfolio-description">Маркетинг</p>
+                            <p class="example-description">Маркетинг</p>
                         </a>
                     </li>
-                    <li class="portfolio_li zastosunku">
+                    <li class="portfolio-card zastosunku">
                         <a href="" class="link-thumb">
                             <div class="img-thumb">
-                                <img src="portfolio/noutbook2.jpg" alt="img" class="portfolio_image">
+                                <img src="portfolio/noutbook2.jpg" alt="img" class="example_image">
                                 <div class="overlay">
                                     <p>Технокрик це сучасний майданчик поширення коронавірусу. 
                                         Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
@@ -182,14 +182,12 @@
                                 </div>
                             </div>
                             <p class="items-descritption">Growing Business</p>
-                            <p class="portfolio-description">Застосунок</p>
+                            <p class="example-description">Застосунок</p>
                         </a>
                     </li>
                 </ul> 
             </div>           
         </section>
-        
-        <script src="./script.js"></script>
     </main>
 
     <!-- Підвал -->
@@ -207,13 +205,15 @@
             <div class="join">
                 <h3>ПРИЄДНУЙТЕСЬ</h3>
                 <ul class="footer-icons">
-                    <li class="social-li"><a class="footer-social-link" href=""><svg class="footer-icon" width="20" height="20"><use href="./img/icons.svg#icon-instagram"></use></svg></a></li>
-                    <li class="social-li"><a class="footer-social-link" href=""><svg class="footer-icon" width="20" height="16"><use href="./img/icons.svg#icon-twitter"></use></svg></a></li>
-                    <li class="social-li"><a class="footer-social-link" href=""><svg class="footer-icon" width="10" height="20"><use href="./img/icons.svg#icon-facebook"></use></svg></a></li>
-                    <li class="social-li"><a class="footer-social-link" href=""><svg class="footer-icon" width="20" height="20"><use href="./img/icons.svg#icon-linkedin"></use></svg></a></li>
+                    <li class="social-item"><a class="footer-social-link" href=""><svg class="footer-icon" width="20" height="20"><use href="./img/icons.svg#icon-instagram"></use></svg></a></li>
+                    <li class="social-item"><a class="footer-social-link" href=""><svg class="footer-icon" width="20" height="16"><use href="./img/icons.svg#icon-twitter"></use></svg></a></li>
+                    <li class="social-item"><a class="footer-social-link" href=""><svg class="footer-icon" width="10" height="20"><use href="./img/icons.svg#icon-facebook"></use></svg></a></li>
+                    <li class="social-item"><a class="footer-social-link" href=""><svg class="footer-icon" width="20" height="20"><use href="./img/icons.svg#icon-linkedin"></use></svg></a></li>
                 </ul>
             </div>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

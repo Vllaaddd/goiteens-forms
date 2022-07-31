@@ -1,0 +1,126 @@
+.form, 
+.fields,
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.form-field,
+.textarea{
+    padding-left: 42px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.form label{
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.field:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.form-icon{
+    position: absolute;
+    top: 35px;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.field{
+    position: relative;
+}
+
+.field:focus-within .form-field,
+.field:hover .form-field,
+.field:focus-within .textarea,
+.field:hover .textarea{
+    border: 1px solid var(--accent-color);
+}
+
+.field:focus-within .form-icon,
+.field:hover .form-icon{
+    fill: var(--accent-color);
+}
+
+.field-checkbox{
+    appearance: none;
+}
+
+.field-checkbox:focus-within + .checkbox-icon{
+    border: 2px solid var(--accent-color);
+}
+
+.checkbox-icon{
+    display: inline-block;
+    margin-right: 8px;
+    padding: 0;
+    border: 2px solid var(--primary-color);
+    border-radius: 2px;
+}
+
+.field-checkbox:checked + .checkbox-icon{
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.field-label a{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.textarea{
+    resize: none;
+    height: 120px;
+    font-size: 14px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    margin-bottom: 15px;
+}
+
+.form button{
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    font-family: Roboto,sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.modal-button{
+    position: absolute;
+    background-image: url(../img/close.svg);
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    right: 8px;
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}

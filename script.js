@@ -1,6 +1,6 @@
-const filterBox = document.querySelectorAll('.portfolio_li');
+const filterBox = document.querySelectorAll('.portfolio-card');
 
-document.querySelector('.filt_div').addEventListener('click', event => {
+document.querySelector('.filters_div').addEventListener('click', event => {
     if (event.target.tagName !== 'A') return false;
 
     let filterClass = event.target.dataset['f'];
