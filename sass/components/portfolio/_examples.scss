@@ -1,14 +1,14 @@
 .examples{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .portfolio-card{
-    border: 1px solid #EEEEEE;
-    width: 320px;
-    margin-bottom: 30px;
     display: block;
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE;
+    flex: 0 32%;
 }
 
 .portfolio-card:hover{
