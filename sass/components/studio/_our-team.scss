@@ -48,8 +48,7 @@
 }
 
 .social-network-list{
-    display: flex;
-    justify-content: center;
+    @include centeredFlex();
 }
 
 .social-item:not(:last-child){

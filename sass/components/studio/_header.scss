@@ -1,8 +1,8 @@
 .logo-span,
 .nav-link:hover,
 .nav-link:focus,
-.info:hover,
-.info:focus
+.info-link:hover,
+.info-link:focus
 {
     color: var(--accent-color);
 }
@@ -47,14 +47,13 @@
     position: relative;
     padding-top: 23px;
     padding-bottom: 23px;
-    
 }
 
-.nav-list .nav-link.current{
+.nav-link.current{
     color: var(--accent-color);
 }
 
-.nav-list .nav-link.current::after{
+.nav-link.current::after{
     position: absolute;
     content: '';
     bottom: 0;
@@ -71,9 +70,7 @@
 .header-nav, 
 .link-list
 {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @include centeredFlex(flex-start);
 }
 
 .link-list li + li{
@@ -84,14 +81,14 @@
     margin-left: auto;
 }
 
-.info{
+.info-link{
     display: flex;
     align-items: center;
     color: var(--text-color);
 }
 
-.link-list .info:hover,
-.link-list .info:focus
+.link-list .info-link:hover,
+.link-list .info-link:focus
 {
     fill: var(--accent-color);
 }

@@ -1,5 +1,5 @@
 .customers-list{
-    display: flex;
+    @include centeredFlex();
 }
 
 .customer-link{
@@ -13,8 +13,7 @@
     fill: var(--svg);
 }
 
-.customer-a:hover
-{
+.customer-link:hover{
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
