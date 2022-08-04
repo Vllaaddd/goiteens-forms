@@ -11,10 +11,10 @@
     position: relative;
     width: 370px;
     height: 294px;
-}
 
-.image-item:not(:last-child){
-    margin-right: 30px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
 .img-overlay{
@@ -28,13 +28,13 @@
     padding-top: 27px;
     padding-bottom: 27px;
     text-align: center;
-}
 
-.img-overlay p{
-    color: var(--secondary-color);
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    & p{
+        color: var(--secondary-color);
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
 }

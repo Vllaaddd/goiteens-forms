@@ -31,11 +31,11 @@
     padding: 6px 25px;
     background-color: #F5F4FA;
     min-width: 73px;
-}
 
-.link-text:hover,
-.link-text:focus
-{
-    background-color: var(--accent-color);
-    color: var(--secondary-color);
+    &:hover,
+    &:focus
+    {
+        background-color: var(--accent-color);
+        color: var(--secondary-color);
+    }
 }

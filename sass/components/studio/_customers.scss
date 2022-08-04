@@ -11,11 +11,11 @@
     justify-content: center;
     align-items: center;
     fill: var(--svg);
-}
 
-.customer-link:hover{
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    &:hover{
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+    }
 }
 
 .customer-item:not(:last-child){

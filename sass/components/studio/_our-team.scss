@@ -15,10 +15,10 @@
     border-radius: 0px 0px 4px 4px;
     width: 270px;
     padding-bottom: 30px;
-}
 
-.team_card:not(:last-child){
-    margin-right: 30px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
 
 .team-img{
@@ -63,11 +63,11 @@
     height: 44px;
     border-radius: 50%;
     fill: var(--svg);
-}
 
-.social-link:hover,
-.social-link:focus
-{
-    fill: var(--secondary-color);
-    background-color: var(--accent-color);
+    &:hover,
+    &:focus
+    {
+        fill: var(--secondary-color);
+        background-color: var(--accent-color);
+    }
 }

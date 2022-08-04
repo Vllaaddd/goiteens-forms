@@ -13,10 +13,22 @@
 
 .field{
     position: relative;
-}
 
-.field:not(:last-child){
-    margin-bottom: 10px;
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    &:focus-within .form-field,
+    &:hover .form-field,
+    &:focus-within .textarea,
+    &:hover .textarea{
+        border: 1px solid var(--accent-color);
+    }
+
+    &:focus-within .form-icon,
+    &:hover .form-icon{
+        fill: var(--accent-color);
+    }
 }
 
 .form-field,
@@ -42,18 +54,6 @@
     height: 18px;
     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.field:focus-within .form-field,
-.field:hover .form-field,
-.field:focus-within .textarea,
-.field:hover .textarea{
-    border: 1px solid var(--accent-color);
-}
-
-.field:focus-within .form-icon,
-.field:hover .form-icon{
-    fill: var(--accent-color);
 }
 
 .field-checkbox{

@@ -1,4 +1,4 @@
-const filterBox = document.querySelectorAll('.portfolio-card');
+const filterBox = document.querySelectorAll('.example-card');
 
 document.querySelector('.filters_div').addEventListener('click', event => {
     if (event.target.tagName !== 'A') return false;
